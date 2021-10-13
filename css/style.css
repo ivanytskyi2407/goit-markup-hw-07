@@ -489,13 +489,14 @@ ul {
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  outline: none;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .subscription__icon {
   margin-left: 10px;
 }
 
-.subscription__input:hover {
+.subscription__input:focus {
   border: 1px solid var(--accent-color);
 }
 .subscription__btn {
@@ -549,7 +550,7 @@ ul {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* -------Close button */
-.modal__closebtn{
+.modal__closebtn {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -607,6 +608,7 @@ ul {
   margin: 0;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  outline: none;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form__icon {
@@ -617,20 +619,20 @@ ul {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: var(--primary-black-color);
 }
-.form__field:hover .form__icon {
-  fill: currentColor;
+.form__input:focus + .form__icon {
   color: var(--accent-color);
-  }
+  fill: currentColor;
+}
 
 .form__textarea {
   padding: 12px 16px;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   resize: none;
+  outline: none;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form__input:hover,
-.form__textarea:hover,
+
 .form__input:focus,
 .form__textarea:focus {
   border: 1px solid var(--accent-color);
@@ -731,7 +733,6 @@ ul {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-
 
 /* -------Карточки------ */
 
