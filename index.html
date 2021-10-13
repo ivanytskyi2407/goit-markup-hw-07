@@ -67,7 +67,7 @@
       <section class="order">
         <div class="container">
           <h1 class="order__title">Эффективные решения для вашего бизнеса</h1>
-          <button class="order__btn" type="button" data-modal-open>
+          <button class="btn" type="button" data-modal-open>
             Заказать услугу
           </button>
         </div>
@@ -472,64 +472,65 @@
         </form>
       </div>
     </footer>
+    <!-- MODAL -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="close-btn" type="button" data-modal-close>
-          <svg width="18" height="18" class="icon-close">
+        <button class="modal__closebtn" type="button" data-modal-close>
+          <svg width="18" height="18" class="modal__closeicon">
             <use href="./image/icon.svg#icon-close"></use>
           </svg>
         </button>
         <form class="form" action="">
-          <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+          <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
           <!-- Имя -->
-          <div class="form-field">
-            <label for="name" class="form-label">Имя</label>
-            <input class="form-input" type="text" name="name" id="name" />
-            <svg class="form-icon" width="15" height="12">
+          <div class="form__field">
+            <label for="name" class="form__label">Имя</label>
+            <input class="form__input" type="text" name="name" id="name" />
+            <svg class="form__icon" width="15" height="12">
               <use href="./image/icon.svg#icon-human"></use>
             </svg>
           </div>
           <!-- Телефон -->
-          <div class="form-field">
-            <label for="tel" class="form-label">Телефон</label>
-            <input class="form-input" type="tel" name="tel" id="tel" />
-            <svg class="form-icon" width="15" height="12">
+          <div class="form__field">
+            <label for="tel" class="form__label">Телефон</label>
+            <input class="form__input" type="tel" name="tel" id="tel" />
+            <svg class="form__icon" width="15" height="12">
               <use href="./image/icon.svg#icon-phone"></use>
             </svg>
           </div>
           <!-- Мейл -->
-          <div class="form-field">
-            <label for="email" class="form-label">Почта</label>
-            <input class="form-input" type="email" name="email" id="email" />
-            <svg class="form-icon" width="15" height="12">
+          <div class="form__field">
+            <label for="email" class="form__label">Почта</label>
+            <input class="form__input" type="email" name="email" id="email" />
+            <svg class="form__icon" width="15" height="12">
               <use href="./image/icon.svg#icon-mail2"></use>
             </svg>
           </div>
           <!-- Коментарий -->
-          <div class="form-field">
-            <label for="coments" class="form-label">Коментарий</label>
+          <div class="form__field">
+            <label for="coments" class="form__label">Коментарий</label>
             <textarea
               name="coments"
               id="coments"
               cols="30"
               rows="10"
               placeholder="Введите текст"
-              class="form-textarea"
+              class="form__textarea"
             ></textarea>
           </div>
           <!-- Соглашение -->
-          <label for="checkbox" class="form-checkbox-label">
+          <label for="checkbox" class="checkbox__label">
             <input
               type="checkbox"
               name="checkbox"
               id="checkbox"
               class="checkbox"
             />
-            <span class="icon-checkbox"> </span>
+            <span class="checkbox__icon"> </span>
             Соглашаюсь срассылкой и принимаю
-            <a href="" class="checkbox-link"> Условия договора</a>
+            <a href="" class="checkbox__link"> Условия договора</a>
           </label>
-          <button type="submit" class="order-btn Form-btn-submit">
+          <button type="submit" class="btn Form-btn-submit">
             Отправить
           </button>
         </form>
