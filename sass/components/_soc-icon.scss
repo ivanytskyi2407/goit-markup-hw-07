@@ -15,8 +15,6 @@
   background-color: $primary-white-color;
   fill: $icon-background;
   transition: background-color $primary-transition, fill $primary-transition;
-}
-.soc__link {
   &:hover,
   &:focus {
     fill: $primary-white-color;
