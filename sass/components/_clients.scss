@@ -1,8 +1,10 @@
 .client__list {
   @include centerflex();
 }
-.client__item:not(:last-child) {
-  margin-right: 30px;
+.client__item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 .client__link {
   @include centerflex();
@@ -13,8 +15,6 @@
   color: $icon-background;
   fill: currentColor;
   transition: fill $primary-transition, border-color $primary-transition;
-}
-.client__link {
   &:focus,
   &:hover {
     fill: $accent-color;
