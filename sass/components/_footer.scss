@@ -76,13 +76,12 @@
   border-radius: 4px;
   outline: none;
   transition: border $primary-transition;
+  &:focus {
+    border: 1px solid $accent-color;
+  }
 }
 .subscription__icon {
   margin-left: 10px;
-}
-
-.subscription__input:focus {
-  border: 1px solid $accent-color;
 }
 .subscription__btn {
   @include centerflex;
