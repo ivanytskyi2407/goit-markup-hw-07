@@ -6,9 +6,6 @@
 }
 .work__item {
   position: relative;
-}
-
-.work__item {
   &:not(:last-child) {
     margin-right: 30px;
   }
