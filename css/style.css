@@ -8,6 +8,7 @@
   --section-services-gap: 30px;
   --icon-background: #afb1b8;
   --primary-black-color: #000000;
+  --primary-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 body {
   font-family: Roboto, sans-serif;
@@ -60,17 +61,17 @@ ul {
   margin-bottom: 50px;
 }
 
-/* -----------ШАПКА */
-.header {
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: #ececec;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
 }
-.header__container {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
+
 /* ------Logo */
 
 .logo {
@@ -87,6 +88,18 @@ ul {
   color: var(--primary-white-color);
 }
 /* Logo------ */
+
+/* -----------ШАПКА */
+.header {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #ececec;
+}
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
 
 /* ---------site nav */
 .nav {
@@ -153,15 +166,16 @@ ul {
 .contact__link:focus {
   color: var(--accent-color);
 }
-/* Header contacts------ */
-/* ШАПКА----------- */
-
-/* -----------ICON------------ */
 .icon__mail,
 .icon__smartphone {
   fill: currentColor;
   margin-right: 10px;
 }
+/* Header contacts------ */
+/* ШАПКА----------- */
+
+/* -----------ICON------------ */
+
 .soc__list {
   display: flex;
   justify-content: center;
@@ -190,6 +204,22 @@ ul {
 }
 
 /*------------- Заказ услуг */
+.btn {
+  background: var(--accent-color);
+  width: 200px;
+  height: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  color: var(--primary-white-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  margin-top: 30px;
+}
+
 .order {
   max-width: 1600px;
   height: 600px;
@@ -223,34 +253,9 @@ ul {
   color: var(--primary-white-color);
 }
 
-.btn {
-  background: var(--accent-color);
-  width: 200px;
-  height: 50px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border: none;
-  cursor: pointer;
-  color: var(--primary-white-color);
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  margin-top: 30px;
-}
 /* Заказ услуг ------------- */
 
 /*------------ наше преимущество */
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  border: 0;
-  clip: rect(0 0 0 0);
-}
 
 .features__icon {
   display: flex;
@@ -728,8 +733,7 @@ ul {
   transform: translateY(0);
   display: block;
   box-sizing: border-box;
-  box-shadow: 0px 1px 1px rgb(0 0 0 / 12%), 0px 4px 4px rgb(0 0 0 / 6%),
-    1px 4px 6px rgb(0 0 0 / 16%);
+  box-shadow: 1px 4px 6px rgb(0 0 0 / 16%);
 }
 
 .services__thumb {
