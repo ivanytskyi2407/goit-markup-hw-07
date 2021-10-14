@@ -1,0 +1,25 @@
+.soc__list {
+  @include centerflex();
+}
+.soc__item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.soc__link {
+  @include centerflex();
+  border-radius: 22px;
+  height: 44px;
+  width: 44px;
+  background-color: $primary-white-color;
+  fill: $icon-background;
+  transition: background-color $primary-transition, fill $primary-transition;
+}
+.soc__link {
+  &:hover,
+  &:focus {
+    fill: $primary-white-color;
+    background-color: $accent-color;
+  }
+}
