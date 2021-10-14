@@ -1,18 +1,23 @@
-$primary-text-color: #757575;
-$title-text-color: #212121;
-$accent-color: #2196f3;
-$primary-white-color: #ffffff;
-$background-color-secondary: #2f303a;
-$bachgroun-button-portfolio: #f5f4fa;
-$section-services-gap: 30px;
-$icon-background: #afb1b8;
-$primary-black-color: #000000;
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./utils/_visually-hidden.scss";
+@import "./utils/body-setting";
 
-body {
-  font-family: Roboto, sans-serif;
-  font-size: 14px;
-  line-height: 1.14;
+// Студія
 
-  color: var(--primary-text-color);
-  background-color: $primary-white-color;
-}
+@import "./components/_logo";
+@import "./components/header-page";
+@import "./components/soc-icon";
+@import "./components/btn";
+@import "./components/order";
+@import "./components/features";
+@import "./components/work-section";
+@import "./components/team";
+@import "./components/clients";
+@import "./components/footer";
+@import "./components/backdrop";
+@import "./components/modal";
+
+// Портфоліо
+@import "./components/menu-btns";
+@import "./components/card-portfolio";
