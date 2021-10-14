@@ -13,9 +13,6 @@
 }
 .features__item {
   flex-basis: calc(100% / 4);
-}
-
-.features__item {
   &:not(:last-child) {
     margin-right: $section-services-gap;
   }
