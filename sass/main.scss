@@ -1,13 +1,13 @@
 @import "./utils/variables";
 @import "./utils/mixins";
 @import "./utils/_visually-hidden.scss";
-@import "./utils/body-setting";
+@import "./utils/commons-style";
 
 // Студія
 
 @import "./components/_logo";
 @import "./components/header-page";
-@import "./components/soc-icon";
+@import "./components/social";
 @import "./components/btn";
 @import "./components/order";
 @import "./components/features";
@@ -20,4 +20,4 @@
 
 // Портфоліо
 @import "./components/menu-btns";
-@import "./components/card-portfolio";
+@import "./components/services-portfolio";
