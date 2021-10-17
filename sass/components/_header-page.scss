@@ -47,7 +47,7 @@
   }
 }
 
-.contact__list {
+.contact {
   @include centerflex();
   margin-left: auto;
 }
@@ -70,8 +70,7 @@
     color: $accent-color;
   }
 }
-.icon__mail,
-.icon__smartphone {
+.contack__icon {
   fill: currentColor;
   margin-right: 10px;
 }
